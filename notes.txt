@@ -1,0 +1,5 @@
+npm i vue
+npm i -g @quasar/cli
+
+quasar create nome_projeto
+quasar new page nome_pagina
