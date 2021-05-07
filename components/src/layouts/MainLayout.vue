@@ -37,6 +37,11 @@
             QAjaxBar
           </q-item-label>
         </q-item>
+        <q-item clickable to="/avatar">
+          <q-item-label>
+            QAvatar
+          </q-item-label>
+        </q-item>
       </q-list>
     </q-drawer>
 
