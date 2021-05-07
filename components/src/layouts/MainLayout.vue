@@ -42,6 +42,21 @@
             QAvatar
           </q-item-label>
         </q-item>
+        <q-item clickable to="/badge">
+          <q-item-label>
+            QBadge
+          </q-item-label>
+        </q-item>
+        <q-item clickable to="/banner">
+          <q-item-label>
+            QBanner
+          </q-item-label>
+        </q-item>
+        <q-item clickable to="/bar">
+          <q-item-label>
+            QBar
+          </q-item-label>
+        </q-item>
       </q-list>
     </q-drawer>
 
