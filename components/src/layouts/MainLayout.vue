@@ -32,29 +32,14 @@
         >
         Components
         </q-item-label>
-        <q-item clickable to="/ajax-bar">
+        <q-item
+          v-for="menuItem in componentMenuItens"
+          :key="menuItem"
+          clickable
+          :to="menuItem"
+        >
           <q-item-label>
-            QAjaxBar
-          </q-item-label>
-        </q-item>
-        <q-item clickable to="/avatar">
-          <q-item-label>
-            QAvatar
-          </q-item-label>
-        </q-item>
-        <q-item clickable to="/badge">
-          <q-item-label>
-            QBadge
-          </q-item-label>
-        </q-item>
-        <q-item clickable to="/banner">
-          <q-item-label>
-            QBanner
-          </q-item-label>
-        </q-item>
-        <q-item clickable to="/bar">
-          <q-item-label>
-            QBar
+            Q{{ menuItem }}
           </q-item-label>
         </q-item>
       </q-list>
@@ -68,11 +53,14 @@
 
 <script>
 
+import componentImporter from '../router/componentImporter'
+
 export default {
   name: 'MainLayout',
   data () {
     return {
-      leftDrawerOpen: false
+      leftDrawerOpen: false,
+      componentMenuItens: componentImporter.getPathNames()
     }
   }
 }
