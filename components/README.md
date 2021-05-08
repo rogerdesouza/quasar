@@ -1,6 +1,6 @@
-# Playing with Quasar components (components)
+# Quasar App (components)
 
-Playing with quasar components
+A Quasar Framework app
 
 ## Install the dependencies
 ```bash
